@@ -1,8 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
-public class HaloGeneric
+public class DataGeneric<T>
 {
-    public static void sapaUser<T>(T inputuser)
+    private T data;
+    public DataGeneric(T data)
     {
-        Console.WriteLine("Hallo user " + inputuser);
+        this.data = data;
+    }
+    public void PrintData()
+    {
+        Console.WriteLine("Data yang tersimpan adalah: " + data);
     }
 }
