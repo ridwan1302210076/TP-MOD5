@@ -23,14 +23,14 @@ internal class Program
                 Console.WriteLine("Data yang tersimpan adalah: " + data);
 
             }
+            }private static void Main(string[] args)
+        {
+            HaloGeneric.sapaUser<string>("Ridwan Nur Rahman");
+            DataGeneric<string> nim = new DataGeneric<string>("1302210076");
+            nim.PrintData();
         }
 
-    }
-    private static void Main(string[] args)
-    {
-        HaloGeneric.sapaUser<string>("Ridwan Nur Rahman");
-        DataGeneric<string> nim = new DataGeneric<string>("1302210076");
-        nim.PrintData();
-    }
 
+    }
+    
 }
